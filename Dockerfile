@@ -6,7 +6,7 @@ FROM python:3.7.0
 ADD requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
-ADD . /jawbbone-health-example
-WORKDIR /jawbbone-health-example
+ADD . /web
+WORKDIR /web
 
-ENV PYTHONPATH=/jawbbone-health-example:$PYTHONPATH
+ENV PYTHONPATH=/web:$PYTHONPATH
