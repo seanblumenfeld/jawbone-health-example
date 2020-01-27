@@ -3,6 +3,11 @@
 The command line interface is provided via Makefile targets. To view all the available 
 command line options run `make help` in the root of the repo.
 
+## Known issues
+- For some reason the APIs started returning a 404. This is a result of 
+some sort of initialisation order being wrong. I spent a bit of time trying 
+to fix it but I ran out of time. The tests pass and the command line client 
+works so it must be something to do with how I spin up the main Flask app. 
 
 ## Install
 The install the application run:
@@ -50,4 +55,3 @@ Logs are not saved to a file currently. A future action would be to integrate a
 logging service which would push application logs to a decoupled application such 
 as Splunk or Grafana. 
 
-##
